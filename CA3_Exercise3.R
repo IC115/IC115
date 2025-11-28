@@ -7,7 +7,7 @@ nll_lm <- function(params, data){
   y <- data[,1]
   X <- as.matrix(data[,-1])
   X <- cbind(1, X)
-  
+
   beta <- params[1:4]
   sigma <- params[5]
   
